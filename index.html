@@ -25,9 +25,24 @@
     <h1>Newsletter:</h1>
     <p>New music on YouTube! Madison Beer - Say It To My Face (MoSi BILLIONAIRE Remix)</p>
     <div class="embed-container">
-    <iframe width="640" height="390" 
+    <iframe id="iframeID" width="640" height="390" 
     src="https://www.youtube.com/embed/rtshUMa98RI?autoplay=1&mute=1" 
     frameborder="0" allow="autoplay" allowfullscreen></iframe>
 </div>
+    <script>
+      function onYouTubeIframeAPIReady() {
+  // iframeId parameter should match your Iframe's id attribute
+  var player = new YT.Player('iframeID', {
+    width: 640,
+    height: 390,
+    videoId: 'rtshUMa98RI',
+    events: {
+      'onReady': function (event) {
+        event.target.setVolume(0.1);
+      }
+    }
+  });
+}
+    </script>
   </body>
 </html>
