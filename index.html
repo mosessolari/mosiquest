@@ -1,13 +1,33 @@
 <!doctype html>
 <html>
   <head>
+    <style>
+    .embed-container {
+      position: relative;
+      padding-bottom: 56.25%;
+      height: 0;
+      overflow: hidden;
+      max-width: 100%;
+    }
+    .embed-container iframe,
+    .embed-container object,
+    .embed-container embed {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+    </style>
     <title>What's new with MoSi BILLIONAIRE?</title>
   </head>
   <body>
     <h1>Newsletter:</h1>
     <p>New music on YouTube! Madison Beer - Say It To My Face (MoSi BILLIONAIRE Remix)</p>
-    
+    <div class="embed-container">
+    <iframe width="640" height="390" 
+    src="https://www.youtube.com/embed/rtshUMa98RI" 
+    frameborder="0" allowfullscreen></iframe>
+</div>
   </body>
 </html>
-
-{% include youtube.html id="rtshUMa98RI" %}
