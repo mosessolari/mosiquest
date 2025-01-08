@@ -7,13 +7,13 @@
   <description>Curated Feeds</description>
   <item>
     <title>Test1</title>
-    <link>https://www.w3schools.com/xml/xml_rss.asp</link>
-    <description>New RSS tutorial on W3Schools</description>
+    <link>https://mosessolari.github.io/mosiquest/</link>
+    <description>This is a test.</description>
   </item>
   <item>
     <title>Test2</title>
-    <link>https://www.w3schools.com/xml</link>
-    <description>New XML tutorial on W3Schools</description>
+    <link>https://mosessolari.github.io/mosiquest/</link>
+    <description>This is another test.</description>
   </item>
 </channel>
 
